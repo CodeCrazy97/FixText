@@ -15,8 +15,7 @@ while read p; do
 		if [[ "$char" == [A-Z] ]]; then  # The character is alphabetic. It is therefore part of a state name.
 			state=${state}$char			
 			if [[ ${#state} == 2 ]]; then  # We have got the entire state name if it's length is exactly 2 chars.
-				echo "STATE: $state" 	
-				cat "\r\n$state " >> $FIXEDFILE
+				echo "${state:0:2} " >> $FIXEDFILE  # Send the state name to the file. Trim the last character (a '\n')
 			fi			
 		else
 			state=""
