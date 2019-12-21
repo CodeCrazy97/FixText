@@ -1,9 +1,5 @@
 # FixText
-Places state-by-state election results on one line (per state).
-
-This script uses the 2000error.txt file, placing the results in the 2000.txt file. 
-
-The problem is: for every state, the election results are all on different lines. All the election results for each state (the number of votes cast per candidate and electoral votes) are placed on different lines. I wanted all election results for each state to be on one line.
+The file [2000error.txt](https://github.com/CodeCrazy97/FixText/blob/master/2000error.txt) contains state-by-state United States election results for the 2000 presidential election. The problem is, every piece of information is on a new line (the state name, votes per candidate, percentage, etc.). This script places all results for each state on one line. The results are placed in the [2000.txt](https://github.com/CodeCrazy97/FixText/blob/master/2000.txt) file. 
 
 For example: In the below picture, the election results in Alabama (popular votes for each candidate, total popular votes, and electoral votes) are on different lines.
 
